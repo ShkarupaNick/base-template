@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost/schedule
+    username: dbadmin
+    password: hihanpan
+    sql-script-encoding: UTF-8
+
