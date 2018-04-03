@@ -1,0 +1,16 @@
+com\service\SecurityServiceImpl.class
+com\repository\UserRepository.class
+com\service\UserServiceImpl.class
+com\CommandLineAppStartupRunner.class
+com\Application.class
+com\entity\Role.class
+com\validator\UserValidator.class
+com\service\SecurityService.class
+com\controller\UserController.class
+com\service\UserDetailsServiceImpl.class
+com\config\WebSecurityConfig.class
+com\entity\Entity.class
+com\entity\User.class
+com\entity\Role$ERole.class
+com\repository\RoleRepository.class
+com\service\UserService.class

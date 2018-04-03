@@ -56,3 +56,60 @@
 [WARN ] 2018-04-03 07:36:58.666 [main] Log4J2YamlConf - This is a warn message
 [ERROR] 2018-04-03 07:36:58.667 [main] Log4J2YamlConf - This is an error message
 [FATAL] 2018-04-03 07:36:58.667 [main] Log4J2YamlConf - This is a fatal message
+[INFO ] 2018-04-03 20:23:09.086 [main] Log4J2YamlConf - This is an info message
+[WARN ] 2018-04-03 20:23:09.089 [main] Log4J2YamlConf - This is a warn message
+[ERROR] 2018-04-03 20:23:09.089 [main] Log4J2YamlConf - This is an error message
+[FATAL] 2018-04-03 20:23:09.090 [main] Log4J2YamlConf - This is a fatal message
+[INFO ] 2018-04-03 20:25:43.641 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 10484 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 20:25:43.643 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-04-03 20:42:00.676 [main] Log4J2YamlConf - This is an info message
+[WARN ] 2018-04-03 20:42:00.680 [main] Log4J2YamlConf - This is a warn message
+[ERROR] 2018-04-03 20:42:00.680 [main] Log4J2YamlConf - This is an error message
+[FATAL] 2018-04-03 20:42:00.680 [main] Log4J2YamlConf - This is a fatal message
+[INFO ] 2018-04-03 20:42:31.073 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 11408 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 20:42:31.080 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-04-03 20:47:34.964 [main] Log4J2YamlConf - This is an info message
+[WARN ] 2018-04-03 20:47:34.967 [main] Log4J2YamlConf - This is a warn message
+[ERROR] 2018-04-03 20:47:34.967 [main] Log4J2YamlConf - This is an error message
+[FATAL] 2018-04-03 20:47:34.967 [main] Log4J2YamlConf - This is a fatal message
+[INFO ] 2018-04-03 20:48:09.360 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 10300 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 20:48:09.363 [restartedMain] Application - No active profile set, falling back to default profiles: default
+[INFO ] 2018-04-03 20:48:28.859 [restartedMain] Application - Started Application in 20.354 seconds (JVM running for 22.744)
+[INFO ] 2018-04-03 20:50:01.433 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 11924 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 20:50:01.433 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 20:50:21.626 [restartedMain] Application - Started Application in 22.161 seconds (JVM running for 24.738)
+[INFO ] 2018-04-03 20:57:55.369 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 4884 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 20:57:55.369 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 20:58:15.808 [restartedMain] Application - Started Application in 22.339 seconds (JVM running for 24.903)
+[INFO ] 2018-04-03 22:02:38.789 [main] Log4J2YamlConf - This is an info message
+[WARN ] 2018-04-03 22:02:38.790 [main] Log4J2YamlConf - This is a warn message
+[ERROR] 2018-04-03 22:02:38.791 [main] Log4J2YamlConf - This is an error message
+[FATAL] 2018-04-03 22:02:38.791 [main] Log4J2YamlConf - This is a fatal message
+[INFO ] 2018-04-03 22:14:49.029 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 11956 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:14:49.030 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:19:50.602 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 5252 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:19:50.607 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:20:09.746 [restartedMain] Application - Started Application in 21.002 seconds (JVM running for 23.71)
+[INFO ] 2018-04-03 22:26:02.092 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 12136 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:26:02.093 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:26:30.602 [restartedMain] Application - Started Application in 30.47 seconds (JVM running for 33.104)
+[INFO ] 2018-04-03 22:28:29.403 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 12216 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:28:29.404 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:28:48.035 [restartedMain] Application - Started Application in 20.496 seconds (JVM running for 23.528)
+[INFO ] 2018-04-03 22:31:42.828 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 4760 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:31:42.828 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:32:02.645 [restartedMain] Application - Started Application in 21.395 seconds (JVM running for 23.81)
+[INFO ] 2018-04-03 22:35:30.231 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 6320 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:35:30.232 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:35:48.770 [restartedMain] Application - Started Application in 20.36 seconds (JVM running for 23.31)
+[INFO ] 2018-04-03 22:45:10.837 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 12052 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:45:10.838 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:45:35.424 [restartedMain] Application - Started Application in 26.248 seconds (JVM running for 29.118)
+[INFO ] 2018-04-03 22:50:57.468 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 12280 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 22:50:57.469 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 22:51:43.272 [restartedMain] Application - Started Application in 47.983 seconds (JVM running for 53.537)
+[INFO ] 2018-04-03 23:00:46.117 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 8012 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 23:00:46.117 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-03 23:01:07.973 [restartedMain] Application - Started Application in 23.576 seconds (JVM running for 26.482)
+[INFO ] 2018-04-03 23:02:19.098 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 11440 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-03 23:02:19.098 [restartedMain] Application - The following profiles are active: debug

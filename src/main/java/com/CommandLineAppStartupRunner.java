@@ -4,6 +4,7 @@ import com.entity.Role;
 import com.entity.User;
 import com.repository.RoleRepository;
 import com.repository.UserRepository;
+import com.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -17,7 +18,7 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
     @Autowired
     RoleRepository roleRepository;
     @Autowired
-    UserRepository userRepository;
+    UserService userService;
 
 
     private static org.apache.logging.log4j.Logger logger = LogManager.getLogger(CommandLineAppStartupRunner.class);
@@ -36,7 +37,6 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
         Set<Role> roles = new HashSet<>();
         roles.add(adminRole);
         user.setRoles(roles);
-
-        userRepository.save(user);
+        userService.save(user);
     }
 }

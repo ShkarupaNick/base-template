@@ -9,5 +9,5 @@ import java.util.UUID;
  * Created by ShkarupaN on 02.04.2018.
  */
 public interface RoleRepository extends CrudRepository<Role, UUID>{
-    Role findByName(String name);
+    Role findByName(Role.ERole name);
 }

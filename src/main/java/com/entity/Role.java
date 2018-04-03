@@ -1,29 +1,17 @@
 package com.entity;
 
-import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 import java.util.Set;
 import java.util.UUID;
 
-@Entity
+@javax.persistence.Entity
 @Table(name = "roles")
-public class Role {
+public class Role extends com.entity.Entity<String>{
     public enum ERole{ADMIN,USER}
-
-    @Id
-    @GeneratedValue( generator="uuid" )
-    @GenericGenerator(
-            name="uuid",
-            strategy="org.hibernate.id.UUIDGenerator",
-            parameters = {
-                    @org.hibernate.annotations.Parameter(
-                            name="uuid_gen_strategy_class",
-                            value="org.hibernate.id.uuid.CustomVersionOneStrategy"
-                    )
-            }
-    )
-    public UUID uuid;
 
     @Enumerated(EnumType.STRING)
     private ERole name;
@@ -73,7 +61,6 @@ public class Role {
         if (uuid != null ? !uuid.equals(role.uuid) : role.uuid != null) return false;
         if (name != null ? !name.equals(role.name) : role.name != null) return false;
         return users != null ? users.equals(role.users) : role.users == null;
-
     }
 
     @Override
