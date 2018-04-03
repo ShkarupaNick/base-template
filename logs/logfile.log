@@ -48,3 +48,11 @@
 [INFO ] 2018-04-02 23:03:00.888 [main] Application - Starting Application on ShkarupaN-NT2 with PID 4940 (started by ShkarupaN in C:\install\Spring Java\base-template)
 [INFO ] 2018-04-02 23:03:00.905 [main] Application - The following profiles are active: debug
 [INFO ] 2018-04-02 23:03:13.958 [main] Application - Started Application in 14.514 seconds (JVM running for 16.571)
+[INFO ] 2018-04-03 07:19:50.185 [main] Log4J2YamlConf - This is an info message
+[WARN ] 2018-04-03 07:19:50.188 [main] Log4J2YamlConf - This is a warn message
+[ERROR] 2018-04-03 07:19:50.188 [main] Log4J2YamlConf - This is an error message
+[FATAL] 2018-04-03 07:19:50.188 [main] Log4J2YamlConf - This is a fatal message
+[INFO ] 2018-04-03 07:36:58.664 [main] Log4J2YamlConf - This is an info message
+[WARN ] 2018-04-03 07:36:58.666 [main] Log4J2YamlConf - This is a warn message
+[ERROR] 2018-04-03 07:36:58.667 [main] Log4J2YamlConf - This is an error message
+[FATAL] 2018-04-03 07:36:58.667 [main] Log4J2YamlConf - This is a fatal message
