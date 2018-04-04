@@ -1,5 +1,12 @@
 spring:
+  thymeleaf:
+    enabled: false
   jpa:
+    properties:
+      jadira:
+        usertype:
+          autoRegisterUserTypes: true
+
     generate-ddl: true
     show-sql: true
     hibernate:
@@ -15,6 +22,8 @@ spring:
 
   mvc:
     view:
-      prefix: /WEB-INF/jsp/
+      prefix: /jsp/
       suffix: .jsp
+      static-path-pattern: /static/** # Path pattern used for static resources.
+
 

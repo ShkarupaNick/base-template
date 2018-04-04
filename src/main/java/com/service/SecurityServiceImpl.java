@@ -1,10 +1,12 @@
 package com.service;
 
+import com.entity.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -18,10 +20,17 @@ public class SecurityServiceImpl implements SecurityService{
     @Autowired
     private UserDetailsService userDetailsService;
 
+    @Autowired
+    private UserService userService;
+
     private static Logger logger = LogManager.getLogger(SecurityServiceImpl.class);
 
     @Override
     public String findLoggedInUsername() {
+
+        if(null==SecurityContextHolder.getContext().getAuthentication()){
+            return null;
+        }
         Object userDetails = SecurityContextHolder.getContext().getAuthentication().getDetails();
         if (userDetails instanceof UserDetails) {
             return ((UserDetails)userDetails).getUsername();
@@ -41,5 +50,14 @@ public class SecurityServiceImpl implements SecurityService{
             SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
             logger.debug(String.format("Auto login %s successfully!", username));
         }
+    }
+
+    @Override
+    public User getCurrentUser() {
+        String loggedUsername = findLoggedInUsername();
+        if(null!=loggedUsername) {
+            return userService.findByUsername(loggedUsername);
+        }
+        return null;
     }
 }

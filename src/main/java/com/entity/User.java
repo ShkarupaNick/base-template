@@ -1,14 +1,17 @@
 package com.entity;
 
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
 @javax.persistence.Entity
 @Table(name = "users")
-public class User extends Entity<String>{
+public class User extends Entity<User>{
     @Id
     @GeneratedValue( generator="uuid" )
     @GenericGenerator(
@@ -28,9 +31,10 @@ public class User extends Entity<String>{
     @Transient
     private String passwordConfirm;
 
-    @ManyToMany
+    @Fetch(FetchMode.SUBSELECT)
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
-    private Set<Role> roles;
+    private Set<Role> roleList;
 
     public UUID getUuid() {
         return uuid;
@@ -64,12 +68,12 @@ public class User extends Entity<String>{
         this.passwordConfirm = passwordConfirm;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
+    public Set<Role> getRoleList() {
+        return roleList;
     }
 
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
+    public void setRoleList(Set<Role> roleList) {
+        this.roleList = roleList;
     }
 
     @Override
@@ -79,33 +83,6 @@ public class User extends Entity<String>{
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", passwordConfirm='" + passwordConfirm + '\'' +
-                ", roles=" + roles +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (uuid != null ? !uuid.equals(user.uuid) : user.uuid != null) return false;
-        if (username != null ? !username.equals(user.username) : user.username != null) return false;
-        if (password != null ? !password.equals(user.password) : user.password != null) return false;
-        if (passwordConfirm != null ? !passwordConfirm.equals(user.passwordConfirm) : user.passwordConfirm != null)
-            return false;
-        return roles != null ? roles.equals(user.roles) : user.roles == null;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = uuid != null ? uuid.hashCode() : 0;
-        result = 31 * result + (username != null ? username.hashCode() : 0);
-        result = 31 * result + (password != null ? password.hashCode() : 0);
-        result = 31 * result + (passwordConfirm != null ? passwordConfirm.hashCode() : 0);
-        result = 31 * result + (roles != null ? roles.hashCode() : 0);
-        return result;
     }
 }

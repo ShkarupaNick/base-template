@@ -28,7 +28,11 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
 
         Role adminRole = new Role();
         adminRole.setName(Role.ERole.ADMIN);
+        Role userRole = new Role();
+        userRole.setName(Role.ERole.USER);
         roleRepository.save(adminRole);
+        roleRepository.save(userRole);
+
 
 
         User user = new User();
@@ -36,7 +40,7 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
         user.setPassword("21928114");
         Set<Role> roles = new HashSet<>();
         roles.add(adminRole);
-        user.setRoles(roles);
+        user.setRoleList(roles);
         userService.save(user);
     }
 }

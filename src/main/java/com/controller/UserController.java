@@ -4,11 +4,8 @@ import com.entity.User;
 import com.service.SecurityService;
 import com.service.UserService;
 import com.validator.UserValidator;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class UserController {
+    private static Logger logger = LogManager.getLogger(UserController.class);
+
     @Autowired
     private UserService userService;
 
@@ -50,6 +49,7 @@ public class UserController {
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
+        logger.debug("UserController "+model);
         if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
         if (logout != null)
