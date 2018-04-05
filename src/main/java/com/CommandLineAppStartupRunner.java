@@ -26,21 +26,21 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        Role adminRole = new Role();
-        adminRole.setName(Role.ERole.ADMIN);
-        Role userRole = new Role();
-        userRole.setName(Role.ERole.USER);
-        roleRepository.save(adminRole);
-        roleRepository.save(userRole);
+//        Role adminRole = new Role();
+//        adminRole.setName(Role.ERole.ADMIN);
+//        Role userRole = new Role();
+//        userRole.setName(Role.ERole.USER);
+//        roleRepository.save(adminRole);
+//        roleRepository.save(userRole);
 
 
 
-        User user = new User();
-        user.setUsername("Syma");
-        user.setPassword("21928114");
-        Set<Role> roles = new HashSet<>();
-        roles.add(adminRole);
-        user.setRoleList(roles);
-        userService.save(user);
+//        User user = new User();
+//        user.setUsername("Syma");
+//        user.setPassword("21928114");
+//        Set<Role> roles = new HashSet<>();
+//        roles.add(adminRole);
+//        user.setRoleList(roles);
+//        userService.save(user);
     }
 }

@@ -46,8 +46,7 @@ public class Role extends com.entity.Entity<User>{
     @Override
     public String toString() {
         return "Role{" +
-                "uuid=" + uuid +
-                ", name='" + name +
-                '}';
+                "name=" + name +
+                super.toString()+ "} ";
     }
 }

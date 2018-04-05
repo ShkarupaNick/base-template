@@ -12,21 +12,11 @@ import java.util.UUID;
 @javax.persistence.Entity
 @Table(name = "users")
 public class User extends Entity<User>{
-    @Id
-    @GeneratedValue( generator="uuid" )
-    @GenericGenerator(
-            name="uuid",
-            strategy="org.hibernate.id.UUIDGenerator",
-            parameters = {
-                    @org.hibernate.annotations.Parameter(
-                            name="uuid_gen_strategy_class",
-                            value="org.hibernate.id.uuid.CustomVersionOneStrategy"
-                    )
-            }
-    )
-    public UUID uuid;
+
     private String username;
     private String password;
+
+    boolean isSystem;
 
     @Transient
     private String passwordConfirm;
@@ -76,13 +66,22 @@ public class User extends Entity<User>{
         this.roleList = roleList;
     }
 
+    public boolean isSystem() {
+        return isSystem;
+    }
+
+    public void setSystem(boolean system) {
+        isSystem = system;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "uuid=" + uuid +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", isSystem=" + isSystem +
                 ", passwordConfirm='" + passwordConfirm + '\'' +
-                '}';
+                ", roleList=" + roleList +
+                 super.toString() + "} ";
     }
 }

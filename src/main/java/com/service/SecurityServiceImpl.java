@@ -31,11 +31,11 @@ public class SecurityServiceImpl implements SecurityService{
         if(null==SecurityContextHolder.getContext().getAuthentication()){
             return null;
         }
-        Object userDetails = SecurityContextHolder.getContext().getAuthentication().getDetails();
-        if (userDetails instanceof UserDetails) {
-            return ((UserDetails)userDetails).getUsername();
-        }
+        Object user = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 
+        if (user instanceof org.springframework.security.core.userdetails.User) {
+            return ((org.springframework.security.core.userdetails.User)user).getUsername();
+        }
         return null;
     }
 

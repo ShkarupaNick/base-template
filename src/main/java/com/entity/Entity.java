@@ -1,23 +1,16 @@
 package com.entity;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
-import org.joda.time.DateTime;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import org.springframework.data.jpa.repository.Temporal;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import java.sql.Date;
-import java.sql.Types;
+
+import java.util.Date;
 import java.util.UUID;
-
-import static java.sql.Types.TIMESTAMP;
-
 
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
@@ -43,8 +36,7 @@ public abstract class Entity<U> {
     protected U createdBy;
 
     @CreatedDate
-    @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
-    private DateTime creationDate;
+    private Date creationDate;
 
     @LastModifiedBy
     @ManyToOne(fetch = FetchType.LAZY)
@@ -52,8 +44,18 @@ public abstract class Entity<U> {
     protected U lastModifiedBy;
 
     @LastModifiedDate
-    @Type(type = "org.jadira.usertype.dateandtime.joda.PersistentDateTime")
-    private DateTime lastModifiedDate;
+    private Date lastModifiedDate;
+
+    @Version
+    private Integer version;
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
 
     public UUID getUuid() {
         return uuid;
@@ -71,15 +73,15 @@ public abstract class Entity<U> {
         this.createdBy = createdBy;
     }
 
-    public DateTime getCreationDate() {
+    public Date getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(DateTime creationDate) {
+    public void setCreationDate(Date creationDate) {
         this.creationDate = creationDate;
     }
 
-    public void setLastModifiedDate(DateTime lastModifiedDate) {
+    public void setLastModifiedDate(Date lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
     }
 
@@ -91,7 +93,18 @@ public abstract class Entity<U> {
         this.lastModifiedBy = lastModifiedBy;
     }
 
-    public DateTime getLastModifiedDate() {
+    public Date getLastModifiedDate() {
         return lastModifiedDate;
+    }
+
+    @Override
+    public String toString() {
+        return  ", uuid=" + uuid +
+                ", createdBy=" + createdBy +
+                ", creationDate=" + creationDate +
+                ", lastModifiedBy=" + lastModifiedBy +
+                ", lastModifiedDate=" + lastModifiedDate +
+                ", version=" + version
+                ;
     }
 }

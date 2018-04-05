@@ -32,11 +32,17 @@ public class UserServiceImpl implements UserService {
         Set<Role> roles = user.getRoleList()==null?new HashSet<>():user.getRoleList();
         roles.add(roleRepository.findByName(Role.ERole.USER));
         user.setRoleList(roles);
+        user.setSystem(false);
         userRepository.save(user);
     }
 
     @Override
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
+    }
+
+    @Override
+    public User getSystemUser() {
+        return userRepository.getSystemUser();
     }
 }
