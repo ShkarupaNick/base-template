@@ -28,15 +28,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/static/**", "/registration").permitAll()
+                .antMatchers("/static/**", "/registration", "/", "/index", "/webjars/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/login")
+                .loginPage("/index")
+                .loginProcessingUrl("/login")
+                .failureUrl("/index?error")
+                .usernameParameter("username")
+                .passwordParameter("password")
                 .permitAll()
+                .and()
+                .rememberMe().key("BaseTemplate")
                 .and()
                 .logout()
                 .logoutUrl("/logout")
+
+                .invalidateHttpSession(true)
+                .deleteCookies("JSESSIONID")
                 .permitAll()
                 ;
     }

@@ -7,6 +7,7 @@ import com.validator.UserValidator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -49,7 +50,7 @@ public class UserController {
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
-        logger.debug("UserController "+model);
+        logger.debug("UserController " + model);
         if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
         if (logout != null)
@@ -57,8 +58,33 @@ public class UserController {
         return "login";
     }
 
-    @RequestMapping(value = {"/", "/welcome"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/welcome"}, method = RequestMethod.GET)
     public String welcome(Model model) {
         return "welcome";
+    }
+
+    @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
+    public String index(Model model) {
+        User user = securityService.getCurrentUser();
+        if (null != user) {
+            model.addAttribute("userForm", user);
+        } else {
+            model.addAttribute("userForm", new User());
+        }
+        return "index";
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    public String loginForm(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) {
+            return "/index";
+        }
+        logger.error(userForm);
+        securityService.autologin(userForm.getUsername(), userForm.getPassword());
+        if (userForm != null) {
+            User user = userService.findByUsername(userForm.getUsername());
+            model.addAttribute("user", user);
+        }
+        return "/index";
     }
 }

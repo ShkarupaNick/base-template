@@ -25,5 +25,10 @@ spring:
       prefix: /jsp/
       suffix: .jsp
       static-path-pattern: /static/** # Path pattern used for static resources.
-
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+      exclude: /jsp
 

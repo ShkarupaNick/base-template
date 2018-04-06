@@ -3,6 +3,7 @@ package com.entity;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -25,6 +26,23 @@ public class User extends Entity<User>{
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roleList;
+
+    @Transient
+    @Column(name = "profile_picture")
+    private byte[] profilePicture;
+
+    public byte[] getProfilePicture() {
+        return profilePicture;
+    }
+
+    public String getProfilePictureString()
+    {
+        return new String(this.profilePicture);
+    }
+
+    public void setProfilePicture(byte[] profilePicture) {
+        this.profilePicture = profilePicture;
+    }
 
     public UUID getUuid() {
         return uuid;
