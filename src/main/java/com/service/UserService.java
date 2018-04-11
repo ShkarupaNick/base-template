@@ -1,12 +1,12 @@
 package com.service;
 
-import com.entity.User;
+import com.entity.UserBean;
 
 /**
  * Created by ShkarupaN on 03.04.2018.
  */
 public interface UserService {
-    void save(User user);
-    User findByUsername(String username);
-    User getSystemUser();
+    void save(UserBean user);
+    UserBean findByUsername(String username);
+    UserBean getSystemUser();
 }

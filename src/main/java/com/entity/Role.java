@@ -10,14 +10,14 @@ import java.util.UUID;
 
 @javax.persistence.Entity
 @Table(name = "roles")
-public class Role extends com.entity.Entity<User>{
+public class Role extends com.entity.Entity<UserBean>{
     public enum ERole{ADMIN,USER}
 
     @Enumerated(EnumType.STRING)
     private ERole name;
 
     @ManyToMany(mappedBy = "roleList")
-    private Set<User> users;
+    private Set<UserBean> users;
 
     public UUID getUuid() {
         return uuid;
@@ -35,11 +35,11 @@ public class Role extends com.entity.Entity<User>{
         this.name = name;
     }
 
-    public Set<User> getUsers() {
+    public Set<UserBean> getUsers() {
         return users;
     }
 
-    public void setUsers(Set<User> users) {
+    public void setUsers(Set<UserBean> users) {
         this.users = users;
     }
 

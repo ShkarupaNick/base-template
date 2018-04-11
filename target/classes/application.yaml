@@ -10,7 +10,7 @@ spring:
     generate-ddl: true
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
   messages:
     basename: validation
 
@@ -32,3 +32,16 @@ spring:
       enabled: true
       exclude: /jsp
 
+
+  social:
+    facebook:
+      appId: 167444837251406
+      appSecret: ae293e48b401a3ec44eacededfafbbb2
+
+    linkedin:
+      app-id: 771mrzk94hye1w
+      app-secret: iIJFgBf9lCb18zYe
+
+    google:
+      appId: 12894100090-tqso3lih5o42isneort886la2pesafmp.apps.googleusercontent.com
+      appSecret: 9xfU16efvxQ-BTMsXT9wOLpw

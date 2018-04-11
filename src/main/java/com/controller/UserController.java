@@ -1,6 +1,6 @@
 package com.controller;
 
-import com.entity.User;
+import com.entity.UserBean;
 import com.service.SecurityService;
 import com.service.UserService;
 import com.validator.UserValidator;
@@ -30,13 +30,13 @@ public class UserController {
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registration(Model model) {
-        model.addAttribute("userForm", new User());
+        model.addAttribute("userForm", new UserBean());
 
         return "registration";
     }
 
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
-    public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
+    public String registration(@ModelAttribute("userForm") UserBean userForm, BindingResult bindingResult, Model model) {
         userValidator.validate(userForm, bindingResult);
 
         if (bindingResult.hasErrors()) {
@@ -65,24 +65,24 @@ public class UserController {
 
     @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
     public String index(Model model) {
-        User user = securityService.getCurrentUser();
+        UserBean user = securityService.getCurrentUser();
         if (null != user) {
             model.addAttribute("userForm", user);
         } else {
-            model.addAttribute("userForm", new User());
+            model.addAttribute("userForm", new UserBean());
         }
         return "index";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    public String loginForm(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
+    public String loginForm(@ModelAttribute("userForm") UserBean userForm, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "/index";
         }
         logger.error(userForm);
         securityService.autologin(userForm.getUsername(), userForm.getPassword());
         if (userForm != null) {
-            User user = userService.findByUsername(userForm.getUsername());
+            UserBean user = userService.findByUsername(userForm.getUsername());
             model.addAttribute("user", user);
         }
         return "/index";

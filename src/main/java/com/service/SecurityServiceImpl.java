@@ -1,12 +1,11 @@
 package com.service;
 
-import com.entity.User;
+import com.entity.UserBean;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -53,7 +52,7 @@ public class SecurityServiceImpl implements SecurityService{
     }
 
     @Override
-    public User getCurrentUser() {
+    public UserBean getCurrentUser() {
         String loggedUsername = findLoggedInUsername();
         if(null!=loggedUsername) {
             return userService.findByUsername(loggedUsername);

@@ -560,3 +560,67 @@
 [INFO ] 2018-04-06 15:37:01.377 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 18576 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
 [INFO ] 2018-04-06 15:37:01.378 [restartedMain] Application - The following profiles are active: debug
 [INFO ] 2018-04-06 15:37:10.547 [restartedMain] Application - Started Application in 9.329 seconds (JVM running for 1850.809)
+[INFO ] 2018-04-10 09:59:58.536 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 09:59:58.536 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-10 10:00:39.176 [restartedMain] Application - Started Application in 42.161 seconds (JVM running for 47.909)
+[INFO ] 2018-04-10 10:10:07.689 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 10:10:07.689 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-10 10:10:27.135 [restartedMain] Application - Started Application in 19.791 seconds (JVM running for 635.857)
+[INFO ] 2018-04-10 10:10:40.195 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 10:10:40.196 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-10 10:11:33.593 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 10:11:33.593 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-10 10:11:44.807 [restartedMain] Application - Started Application in 11.344 seconds (JVM running for 713.527)
+[INFO ] 2018-04-10 10:12:18.182 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 10:12:18.182 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-10 10:16:47.305 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 10:16:47.306 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-10 10:20:16.510 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 10:20:16.510 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-10 10:21:12.861 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 27412 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-10 10:21:12.861 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 13:45:03.813 [main] Log4J2YamlConf - This is an info message
+[WARN ] 2018-04-11 13:45:03.818 [main] Log4J2YamlConf - This is a warn message
+[ERROR] 2018-04-11 13:45:03.819 [main] Log4J2YamlConf - This is an error message
+[FATAL] 2018-04-11 13:45:03.819 [main] Log4J2YamlConf - This is a fatal message
+[INFO ] 2018-04-11 13:46:38.502 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 33732 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 13:46:38.505 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 13:49:40.122 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 29576 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 13:49:40.123 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 13:51:43.376 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 16960 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 13:51:43.377 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 13:57:39.554 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 29144 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 13:57:39.555 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 14:01:48.160 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 11416 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 14:01:48.161 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 14:02:22.754 [restartedMain] Application - Started Application in 37.112 seconds (JVM running for 40.036)
+[INFO ] 2018-04-11 14:19:53.685 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 11416 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 14:19:53.686 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 14:20:22.648 [restartedMain] Application - Started Application in 29.702 seconds (JVM running for 1119.907)
+[INFO ] 2018-04-11 14:26:11.139 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 43536 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 14:26:11.140 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 14:26:54.058 [restartedMain] Application - Started Application in 47.081 seconds (JVM running for 52.373)
+[INFO ] 2018-04-11 14:34:22.398 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 21144 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 14:34:22.399 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 14:34:53.550 [restartedMain] Application - Started Application in 44.472 seconds (JVM running for 48.499)
+[INFO ] 2018-04-11 14:42:44.970 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 42992 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 14:42:44.971 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 14:43:26.822 [restartedMain] Application - Started Application in 43.723 seconds (JVM running for 47.881)
+[INFO ] 2018-04-11 14:48:10.506 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 212 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 14:48:10.506 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 14:48:48.468 [restartedMain] Application - Started Application in 40.673 seconds (JVM running for 45.018)
+[INFO ] 2018-04-11 15:38:56.961 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 44028 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 15:38:56.961 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 15:39:34.811 [restartedMain] Application - Started Application in 41.091 seconds (JVM running for 44.479)
+[INFO ] 2018-04-11 15:42:31.853 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 28564 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 15:42:31.853 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 15:43:10.340 [restartedMain] Application - Started Application in 40.975 seconds (JVM running for 44.821)
+[INFO ] 2018-04-11 15:43:24.865 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 28564 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 15:43:24.865 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 15:43:46.036 [restartedMain] Application - Started Application in 21.586 seconds (JVM running for 80.518)
+[INFO ] 2018-04-11 15:43:59.792 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 28564 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 15:43:59.792 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 15:44:12.313 [restartedMain] Application - Started Application in 12.782 seconds (JVM running for 106.795)
+[INFO ] 2018-04-11 15:46:17.523 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 30568 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
+[INFO ] 2018-04-11 15:46:17.523 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 15:46:51.237 [restartedMain] Application - Started Application in 47.686 seconds (JVM running for 52.442)

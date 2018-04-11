@@ -1,17 +1,11 @@
 package com;
 
-import com.entity.Role;
-import com.entity.User;
 import com.repository.RoleRepository;
-import com.repository.UserRepository;
 import com.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-
-import java.util.HashSet;
-import java.util.Set;
 
 @Component
 public class CommandLineAppStartupRunner implements CommandLineRunner {
@@ -35,7 +29,7 @@ public class CommandLineAppStartupRunner implements CommandLineRunner {
 
 
 
-//        User user = new User();
+//        UserBean user = new UserBean();
 //        user.setUsername("Syma");
 //        user.setPassword("21928114");
 //        Set<Role> roles = new HashSet<>();

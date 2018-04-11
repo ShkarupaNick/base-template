@@ -1,7 +1,7 @@
 package com.service;
 
 import com.entity.Role;
-import com.entity.User;
+import com.entity.UserBean;
 import com.repository.RoleRepository;
 import com.repository.UserRepository;
 import org.apache.logging.log4j.LogManager;
@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
-    public void save(User user) {
+    public void save(UserBean user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
 
         Set<Role> roles = user.getRoleList()==null?new HashSet<>():user.getRoleList();
@@ -37,12 +37,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findByUsername(String username) {
+    public UserBean findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
 
     @Override
-    public User getSystemUser() {
+    public UserBean getSystemUser() {
         return userRepository.getSystemUser();
     }
 }

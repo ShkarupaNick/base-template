@@ -6,9 +6,10 @@
 }
 
 .dropdown-menu{
-    margin-top: 17px !important;
+    /*margin-top: 17px !important;*/
     background-color: white;
     border-bottom-color: #fff;
+    width: 302px; !important;
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {

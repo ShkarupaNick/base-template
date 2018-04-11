@@ -36,11 +36,7 @@
                             <li>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        Login via
-                                        <div class="social-buttons">
-                                            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-                                        </div>
+                                        <jsp:include page="social_login.jsp"/>
                                         or
 
                                         <form:form method="POST" class="form" role="form" action="login"
