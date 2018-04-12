@@ -5,7 +5,7 @@
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
 
-<link href="${contextPath}/static/css/nav-menu.css" rel="stylesheet">
+<link href="${contextPath}/static/css/nav-bar.css" rel="stylesheet">
 
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -118,4 +118,4 @@
 </nav>
 <c:remove var="SPRING_SECURITY_LAST_EXCEPTION" scope="session"/>
 
-<script src="${contextPath}/static/js/nav-menu.js"></script>
+<script src="${contextPath}/static/js/nav-bar.js"></script>

@@ -624,3 +624,9 @@
 [INFO ] 2018-04-11 15:46:17.523 [restartedMain] Application - Starting Application on NShkarupa-NT with PID 30568 (C:\Java\base-template\target\classes started by NShkarupa in C:\Java\base-template)
 [INFO ] 2018-04-11 15:46:17.523 [restartedMain] Application - The following profiles are active: debug
 [INFO ] 2018-04-11 15:46:51.237 [restartedMain] Application - Started Application in 47.686 seconds (JVM running for 52.442)
+[INFO ] 2018-04-11 19:27:37.862 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 10512 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-11 19:27:37.865 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 19:28:15.304 [restartedMain] Application - Started Application in 39.082 seconds (JVM running for 41.988)
+[INFO ] 2018-04-11 19:32:44.019 [restartedMain] Application - Starting Application on ShkarupaN-NT2 with PID 5888 (started by ShkarupaN in C:\install\Spring Java\base-template)
+[INFO ] 2018-04-11 19:32:44.020 [restartedMain] Application - The following profiles are active: debug
+[INFO ] 2018-04-11 19:33:10.391 [restartedMain] Application - Started Application in 28.193 seconds (JVM running for 31.541)
