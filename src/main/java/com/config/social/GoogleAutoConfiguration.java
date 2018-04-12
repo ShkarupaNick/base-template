@@ -1,4 +1,4 @@
-package com.config;
+package com.config.social;
 
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;

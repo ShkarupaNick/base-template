@@ -20,5 +20,4 @@ public class ChangeDefaultFlowController extends ConnectController {
     protected String connectedView(String providerId) {
         return "redirect:/"+providerId;
     }
-
 }

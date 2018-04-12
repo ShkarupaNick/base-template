@@ -1,4 +1,4 @@
-package com.config;
+package com.config.social;
  
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.social.autoconfigure.SocialProperties;

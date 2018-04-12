@@ -1,5 +1,6 @@
 package com.security.provider;
 
+import com.config.social.BaseProvider;
 import com.entity.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.connect.ConnectionRepository;
@@ -13,10 +14,10 @@ import org.springframework.ui.Model;
 public class FacebookProvider  {
 
 	private static final String FACEBOOK = "facebook";
-    private static final String REDIRECT_LOGIN = "redirect:/login";
+    private static final String REDIRECT_LOGIN = "redirect:/index";
 
     	@Autowired
-    	BaseProvider baseProvider ;
+		BaseProvider baseProvider ;
     	
 
 	public String getFacebookUserData(Model model, UserBean userForm) {

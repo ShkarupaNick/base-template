@@ -39,7 +39,7 @@
                 <li><a href="#" class="icon ion-chatbubbles">Chat</a></li>
                 <li><a href="#" class="icon ion-paper-airplane">News</a></li>
                 <li><a href="#" class="icon ion-edit">Wiki</a></li>
-                <li><a href="#login" class="icon ion-android-exit button button-red button-login toggle-hide">Sign
+                <li><a href="#login" class="not-link icon ion-android-exit button button-red button-login toggle-hide">Sign
                     In</a></li>
             </ul>
         </nav>
@@ -78,13 +78,22 @@
         </form>
     </div>
     <div class="col half highlighted-bg">
-        <form  action = "/connect/facebook" method = "get">
             <%--<button class="button full-width button-twitter"><i class="icon ion-social-twitter"></i>Sign in with Twitter</button>--%>
             <%--<button class="button full-width button-github"><i class="icon ion-social-github"></i>Sign in with Github</button>--%>
-            <button class="button full-width button-facebook"><i class="icon ion-social-facebook"></i>Sign in with Facebook</button>
-            <button class="button full-width button-google"><i class="icon ion-social-google"></i>Sign in with Google</button>
-            <button class="button full-width button-linkedin"><i class="icon ion-social-linkedin"></i>Sign in with LinkedIn</button>
-        </form>
+
+
+                <form action="/connect/facebook" method="POST">
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                    <button class="button full-width button-facebook"><i class="icon ion-social-facebook"></i>Sign in with Facebook</button>
+                </form>
+                <form action="/connect/google" method="POST">
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                    <button class="button full-width button-google"><i class="icon ion-social-google"></i>Sign in with Google</button>
+                </form>
+                <form action="/connect/linkedin" method="POST">
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                    <button class="button full-width button-linkedin"><i class="icon ion-social-linkedin"></i>Sign in with LinkedIn</button>
+                </form>
     </div>
     <button class="button button-red close-button toggle-hide"><i class="icon ion-close-circled"></i> Close</button>
 </div>

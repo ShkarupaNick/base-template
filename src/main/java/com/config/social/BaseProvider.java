@@ -1,4 +1,4 @@
-package com.security.provider;
+package com.config.social;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -55,7 +55,5 @@ public class BaseProvider {
  public void setLinkedIn(LinkedIn linkedIn) {
  this.linkedIn = linkedIn;
  }
- 
- 
  
 }

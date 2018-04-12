@@ -728,3 +728,13 @@ input:focus {
     animation: fadein 0.3s forwards ease-out;
     display: block;
 }
+
+.login-modal-bg {
+    background: #0000005e;
+    mix-blend-mode: multiply;
+}
+
+.not-link{
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
